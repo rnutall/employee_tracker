@@ -65,25 +65,34 @@ function addEmployee() {
     ])
     .then((answers) => {
       // Execute SQL query to insert employee into database
-      const sql = `INSERT INTO employees (first_name, last_name, role, manager) VALUES ('${answers.firstName}', '${answers.lastName}', '${answers.role}', '${answers.manager}')`;
+      const depart = `INSERT INTO department (first_name, last_name, role, manager) VALUES ('${answers.firstName}', '${answers.lastName}', '${answers.role}', '${answers.manager}')`;
       connection.query(sql, (err, result) => {
         if (err) throw err;
         console.log(`${result.affectedRows} employee added`);
       });
-    });
-}
+      });
+    };
+
 
 switch (answers.action) {
   case "Add department":
     addDepartment();
     break;
+  case "update department":
+    updateDepartment();
+    break;
 
   case "Add role":
     addRole();
     break;
+  case "update role":
+    updateRole();
+    break;
 
   case "add employee":
-    addEmployee(rName, "", lName, "", role, "", manager, "");
+    addEmployee("firstName", "lastName", "role", "manager");
+    break;
   case "update employee":
     updateEmployee();
+    break;
 }

@@ -8,9 +8,7 @@ USE inventory_db;
 
 -- Creates the table within inventory_db --
 CREATE TABLE department (
-  -- Creates a numeric column called "id" --
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
--- Makes a string column called "name" which contains at least varchar(30) cannot contain null --
   name VARCHAR(30) NOT NULL
 );
 

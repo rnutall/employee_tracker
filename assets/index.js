@@ -7,19 +7,20 @@ inquirer
       name: "action",
       message: "What would you like to do?",
       choices: [
-        "Add employee",
-        "Add department",
-        "Add role",
-        "View employees",
-        "View departments",
-        "View roles",
-        "Update employee information",
+        "add employee",
+        "add department",
+        "add role",
+        "view employees",
+        "view departments",
+        "view roles",
+        "update employee information",
       ],
     },
-    // Add more prompts here for each action
   ])
+
   .then((answers) => {
     // Handle user input based on their selected action
+    
   });
 
 function addEmployee() {
@@ -75,7 +76,7 @@ function addEmployee() {
 
 
 switch (answers.action) {
-  case "Add department":
+  case "add department":
     addDepartment();
     break;
   case "update department":

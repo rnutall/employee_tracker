@@ -1,5 +1,5 @@
--- use inventory_db database --
-USE inventory_db;
+-- use employee_db database --
+USE emplyoee_db;
 
 INSERT INTO department (name) VALUES ('produce'),
 ('houseWares'), ('auto');

@@ -4,7 +4,7 @@ SQL: Employee Tracker
   
 ## Description:
 
-Thomas & Friends SQL: Employee Tracker is 'Thomas' and 'Tom' themed SQL employee data base tracker of Thomas Calle's(thats me by the way) fantasy employee famous fictional, non-fictional, characters, celebrities, significant figures team. The interfaces allows non-developers to easily view and interact with information through the command-line of the application stored in an SQL Employee Tracker database. 
+SQL: Employee Tracker is 'Thomas' and 'Tom' themed SQL employee data base tracker of fantasy employee famous fictional, non-fictional, characters, celebrities, significant figures team. The interfaces allows non-developers to easily view and interact with information through the command-line of the application stored in an SQL Employee Tracker database. 
 
 ## Table of Contents:
 - [Overview](#Overview)
